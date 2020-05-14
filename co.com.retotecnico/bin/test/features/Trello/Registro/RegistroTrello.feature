@@ -6,7 +6,7 @@ Feature: Registro en Trello
 
 	@CasoExitoso
   Scenario: Registro exitoso en Trello
-    Given Ingreso a la opcion crea tu cuenta con el correo "pruebatrello1@yopmail.com"
+    Given Ingreso a la opcion crea tu cuenta con el correo "pruebatrello2@yopmail.com"
     When Diligencio el formulario de registro
     | Nombre										|	Password			|
     |	Alix Johana Diaz Grisales	|	PSWCHTRELLO+1	|

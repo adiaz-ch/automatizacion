@@ -12,8 +12,9 @@ Feature: Crear trablero de trabajo en Trello
 
     Examples: 
       |	Correo											|	Password			| Nombre		|
-      |	pruebatrello1@yopmail.com		|	123456789			|	prueba		|
-      #|	alixjohanadiaz@hotmail.com	|	PSWCHTRELLO		|	Prueba		|
-      #|	adiaz@choucairtesting.com		|	PSWCHTRELLO+1	| Tablero1	|
-      #|	adiaz@choucairtesting.com		| PSWCHTRELLO+1	|	Tablero2	|
-      #|	adiaz@choucairtesting.com		| PSWCHTRELLO+1	|	Tablero3	|
+      |	pruebatrello1@yopmail.com		|	123456789			|	prueba1		|
+      |	pruebatrello2@yopmail.com		|	PSWCHTRELLO+1	|	prueba2		|
+      |	alixjohanadiaz@hotmail.com	|	PSWCHTRELLO		|	Prueba3		|
+      #|	pruebatrello1@yopmail.com		|	PSWCHTRELLO+1	| Tablero1	|
+      #|	pruebatrello1@yopmail.com		| PSWCHTRELLO+1	|	Tablero2	|
+      #|	pruebatrello1@yopmail.com		| PSWCHTRELLO+1	|	Tablero3	|
