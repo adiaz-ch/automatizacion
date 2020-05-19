@@ -14,6 +14,8 @@ public class ComprarTelevisorSteps {
 	ComprarTelevisorPage comprarTelevisorPage;
 	CarritoDeComprasPage carritoDeComprasPage;
 	
+	String producto;
+	
 	@Step
 	public void buscarTelevisor(List<List<String>> data, int i) {
 		homeExitoPage.open();
@@ -24,23 +26,27 @@ public class ComprarTelevisorSteps {
 		comprarTelevisorPage.filtrar(data.get(i).get(1).trim());
 		try {Thread.sleep(20000);}catch (InterruptedException e) {}
 		comprarTelevisorPage.filtrar(data.get(i).get(2).trim());
-		try {Thread.sleep(5000);}catch (InterruptedException e) {}
+		try {Thread.sleep(3000);}catch (InterruptedException e) {}
 		comprarTelevisorPage.imprimirResultados();
 	}
 
 	@Step
 	public void seleccionarTelevisor() {
 		comprarTelevisorPage.seleccionarPrimerTelevisor();
+		try {Thread.sleep(5000);}catch (InterruptedException e) {}
 	}
 
 	@Step
 	public void agregarAlCarrito() {
-		comprarTelevisorPage.agregarAlcarrito();
+		producto = comprarTelevisorPage.agregarAlcarrito();
+		try {Thread.sleep(5000);}catch (InterruptedException e) {}
+		System.out.println("producto agregado al carrito: "+producto);
 	}
 
 	@Step
 	public void verificarCarrito() {
-		comprarTelevisorPage.verificarCarrito();
+		comprarTelevisorPage.abrirrCarrito();
+		carritoDeComprasPage.verificarCarrito(producto);
 	}
 
 }
